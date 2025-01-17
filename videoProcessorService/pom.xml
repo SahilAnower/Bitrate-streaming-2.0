@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.bitrate</groupId>
-	<artifactId>userService</artifactId>
+	<artifactId>videoProcessorService</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>userService</name>
-	<description>User Service application for Bitrate</description>
+	<name>videoProcessorService</name>
+	<description>Video ProcessorService application for Bitrate</description>
 	<url/>
 	<licenses>
 		<license/>
