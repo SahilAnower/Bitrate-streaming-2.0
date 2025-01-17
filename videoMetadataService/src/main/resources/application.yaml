@@ -1,0 +1,51 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: videoMetadataService
+  datasource:
+    url: jdbc:postgresql://localhost:5432/video_metadata_db
+    username: admin
+    password: admin
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  health:
+    readiness-state:
+      enabled: true
+    liveness-state:
+      enabled: true
+  endpoint:
+    shutdown:
+      enabled: true
+    health:
+      probes:
+        enabled: true
+  info:
+    env:
+      enabled: true
+
+endpoints:
+  shutdown:
+    enabled: true
+
+info:
+  app:
+    name: "videoMetadata"
+    description: "Bitrate VideoMetadata Application"
+    version: "1.0.0"
+
+logging:
+  level:
+    com:
+      bitrate:
+        videoMetadataService: DEBUG
