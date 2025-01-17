@@ -1,10 +1,10 @@
 server:
-  port: 8080
+  port: 8081
 spring:
   application:
-    name: videoMetadataService
+    name: "userService"
   datasource:
-    url: jdbc:postgresql://localhost:5432/video_metadata_db
+    url: jdbc:postgresql://localhost:5432/user_db
     username: admin
     password: admin
     driver-class-name: org.postgresql.Driver
@@ -40,15 +40,15 @@ endpoints:
 
 info:
   app:
-    name: "videoMetadata"
-    description: "Bitrate VideoMetadata Application"
+    name: "users"
+    description: "Bitrate Users Application"
     version: "1.0.0"
 
 logging:
   level:
     com:
       bitrate:
-        videoMetadataService: DEBUG
+        userService: DEBUG
 
 eureka:
   instance:
