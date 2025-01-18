@@ -1,0 +1,4 @@
+package com.bitrate.userService.service.impl;
+
+public class CustomUserDetailsService {
+}
